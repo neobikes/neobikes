@@ -1,6 +1,6 @@
 # Maciej Czyż
 
-**AI Workflow & Automation Engineer** · Kraków, Poland
+**AI Workflow & Automation Engineer**
 
 I build software through AI: I design, orchestrate and verify the work of AI agents (Claude Code) instead of writing
 code by hand. My repositories are private — this page describes what is in them.
