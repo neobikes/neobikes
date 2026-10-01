@@ -8,7 +8,7 @@ code by hand. My repositories are private — this page describes what is in the
 ## Skolteka — school-management SaaS · [skolteka.com](https://skolteka.com)
 
 A multi-tenant SaaS for running a school, full stack: Next.js, Supabase / PostgreSQL, TypeScript. Developed since
-April 2025, ~2,280 commits. Pre-launch, designed from the experience of a pilot at a language school.
+April 2025: ~2,280 commits and 300+ completed features. Pre-launch, designed from the experience of a pilot at a language school.
 
 - School panel: students, teachers, parents, groups, lessons, calendar, rooms and buildings, branches, billing
 - Separate portals for parents, students and the platform operator
@@ -20,8 +20,9 @@ April 2025, ~2,280 commits. Pre-launch, designed from the experience of a pilot 
 ## The fleet — AI agent orchestration environment for software development
 
 Built since May 2026, through AI, out of the needs of daily work. A central host coordinates Claude agents with
-defined roles; I set the direction and approve the critical steps. I develop Skolteka on it, and the fleet improves
-itself: since August 2026 its tracker has closed 77 features, most of them improvements to the fleet.
+defined roles; I set the direction and approve the critical steps. I develop Skolteka on it, and the fleet develops
+itself. My feature registry, kept since February 2026, holds 900+ features, nearly 700 of them completed — 400+
+since May 2026, when I started building the fleet, most of them for the fleet itself.
 
 - **Roles.** A coordinator that talks to me and dispatches the work; builders that work end to end or in isolated
   git worktrees; a merger that applies database migrations and verifies the build; a critic that challenges research
