@@ -6,29 +6,28 @@ I build software through AI: I design, orchestrate and verify the work of AI age
 
 ## Skolteka — school-management SaaS · [skolteka.com](https://skolteka.com)
 
-A multi-tenant SaaS for running a school, full stack: Next.js, Supabase / PostgreSQL, TypeScript. Developed since
-April 2025: ~2,280 commits and 300+ completed features. Pre-launch, designed from the experience of a pilot at a language school.
+A multi-tenant SaaS for running a school, full stack: Next.js, Supabase / PostgreSQL, TypeScript. Designed since June
+2024 from my work for language schools and a pilot; code since April 2025, fully rebuilt in January 2026. Pre-launch.
 
 - School panel: students, teachers, parents, groups, lessons, calendar, rooms and buildings, branches, billing
 - Separate portals for parents, students and the platform operator
 - Self-service school sign-up with a public page under its own subdomain
-- Polish and English interface; 57 database tables
+- Polish and English interface
 - Automated quality gates on every commit (including RLS security checks in migrations) and error monitoring
   (Sentry)
 
-## The fleet — AI agent orchestration environment for software development
+## AI Orchestrator — my own AI agent orchestrator
 
-Built since May 2026, through AI, out of the needs of daily work. A central host coordinates Claude agents with
-defined roles; I set the direction and approve the critical steps. I develop Skolteka on it, and the fleet develops
-itself. My feature registry, kept since February 2026, holds 900+ features, nearly 700 of them completed — 400+
-since May 2026, when I started building the fleet, most of them for the fleet itself.
+Built in 2026, through AI, out of the needs of daily work. It started as a fleet of agents exchanging files; since
+August 2026 a central host (control plane, Claude Agent SDK) coordinates Claude agents with defined roles. I set the
+direction and approve the critical steps. I develop Skolteka on it, and the orchestrator itself.
 
 - **Roles.** A coordinator that talks to me and dispatches the work; builders that work end to end or in isolated
   git worktrees; a merger that applies database migrations and verifies the build; a critic that challenges research
   findings; a tester that checks the live production site in a browser.
 - **Review before and after the code.** At normal and careful rigour a plan is reviewed before code is written; the
   finished code is reviewed again, with at least one reviewer who has not seen the plan. Database, auth, security and
-  backend changes can never take the light path, so they always get the full review.
+  backend changes can never take the light path — the host enforces it.
 - **The host, not a model, owns production.** Agents don't push: they commit and ask the host to ship. The host
   checks that the commit is still the branch tip, ships one change at a time from a queue, checks the health of
   production on Vercel before pushing, and watches the deploy until it is live.
