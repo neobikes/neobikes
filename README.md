@@ -46,7 +46,7 @@ direction and approve the critical steps. I develop Skolteka on it, and the orch
 - **2024** — freelance (B2B) for an automation firm, at several of its clients, language schools: Airtable,
   Make.com, Bitrix24, Notion, two-way API synchronization. Since 2024, an unpaid pilot of my own system at a
   language school.
-- **2009–2015** — software tester and analyst: accounting software for municipal offices, test automation, Oracle
+- **2008–2012** — software tester and analyst: accounting software for municipal offices, test automation, Oracle
   SQL, process analysis.
 
 2,500+ commits in the last year (private repositories) · [CV](https://cv.moryszon.com/)
