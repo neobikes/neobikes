@@ -9,12 +9,9 @@ I build software through AI: I design, orchestrate and verify the work of AI age
 A multi-tenant SaaS for running a school, full stack: Next.js, Supabase / PostgreSQL, TypeScript. Designed since June
 2024 from my work for language schools and a pilot; code since April 2025, fully rebuilt in January 2026. Pre-launch.
 
-- School panel: students, teachers, parents, groups, lessons, calendar, rooms and buildings, branches, billing
-- Separate portals for parents, students and the platform operator
+- Built-in AI agent: an assistant in the school panel and a chat on the school's page
 - Self-service school sign-up with a public page under its own subdomain
-- Polish and English interface
-- Automated quality gates on every commit (including RLS security checks in migrations) and error monitoring
-  (Sentry)
+- Automated quality gates on every commit and error monitoring (Sentry)
 
 ## AI Orchestrator — my own AI agent orchestrator
 
@@ -22,9 +19,10 @@ Built in 2026, through AI, out of the needs of daily work. It started as a fleet
 August 2026 a central host (control plane, Claude Agent SDK) coordinates Claude agents with defined roles. I set the
 direction and approve the critical steps. I develop Skolteka on it, and the orchestrator itself.
 
-- **Roles.** A coordinator that talks to me and dispatches the work; builders that work end to end or in isolated
-  git worktrees; a merger that applies database migrations and verifies the build; a critic that challenges research
-  findings; a tester that checks the live production site in a browser.
+- **Roles.** A lead agent that talks to me and keeps the backlog; project coordinators that dispatch the work;
+  builders that work end to end or in isolated git worktrees; mergers that merge the work of the worktree builders,
+  apply database migrations and verify the build; a critic that challenges research findings; testers that check the
+  live production sites in a browser.
 - **Review before and after the code.** At normal and careful rigour a plan is reviewed before code is written; the
   finished code is reviewed again, with at least one reviewer who has not seen the plan. Database, auth, security and
   backend changes can never take the light path — the host enforces it.
@@ -35,7 +33,7 @@ direction and approve the critical steps. I develop Skolteka on it, and the orch
   tester's report — never self-reported by the agent that did the work.
 - **Fleet tools by role.** Each agent gets only the fleet tools its role allows, from the host's internal MCP
   server: messaging, launching agents, merge, ship, feature tracking.
-- **Keeps itself running.** It wakes agents after a usage limit resets, steers context compaction before a session
+- **Keeps itself running.** It can wake agents after a usage limit resets, steers context compaction before a session
   overflows, diagnoses failed turns and git failures, nudges idle agents, and checks itself on startup for failures
   met in practice.
 - **Dashboard.** A live view of every agent, chat with any of them, launch presets, and one hold on all production
@@ -49,4 +47,4 @@ direction and approve the critical steps. I develop Skolteka on it, and the orch
 - **2008–2012** — software tester and analyst: accounting software for municipal offices, test automation, Oracle
   SQL, process analysis.
 
-2,500+ commits in the last year (private repositories) · [CV](https://cv.moryszon.com/)
+3,000+ commits in the last year (private repositories) · [CV](https://cv.moryszon.com/)
