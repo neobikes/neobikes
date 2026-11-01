@@ -1,50 +1,32 @@
 # Maciej Czyż
 
-**AI Workflow & Automation Engineer**
+**AI Workflow & Automation Engineer** — I build software through AI: I design, orchestrate and verify the work of AI
+agents.
 
-I build software through AI: I design, orchestrate and verify the work of AI agents (Claude Code). My repositories are private — this page describes what is in them.
+## Skolteka · [skolteka.com](https://skolteka.com)
 
-## Skolteka — school-management SaaS · [skolteka.com](https://skolteka.com)
+Multi-tenant school-management SaaS with a built-in AI agent (a configurable assistant and chat).
 
-A multi-tenant SaaS for running a school, full stack: Next.js, Supabase / PostgreSQL, TypeScript. Designed since June
-2024 from my work for language schools and a pilot; code since April 2025, fully rebuilt in January 2026. Pre-launch.
+- Full stack: Next.js, Supabase / PostgreSQL, TypeScript
+- Automated quality gates, monitoring (Sentry)
+- Designed since June 2024
 
-- Built-in AI agent: an assistant in the school panel and a chat on the school's page
-- Self-service school sign-up with a public page under its own subdomain
-- Automated quality gates on every commit and error monitoring (Sentry)
+## AI Orchestrator
 
-## AI Orchestrator — my own AI agent orchestrator
+My own AI agent orchestrator on the Claude Agent SDK. A central host coordinates agents with defined
+roles.
 
-Built in 2026, through AI, out of the needs of daily work. It started as a fleet of agents exchanging files; since
-August 2026 a central host (control plane, Claude Agent SDK) coordinates Claude agents with defined roles. I set the
-direction and approve the critical steps. I develop Skolteka on it, and the orchestrator itself.
-
-- **Roles.** A lead agent that talks to me and keeps the backlog; project coordinators that dispatch the work;
-  builders that work end to end or in isolated git worktrees; mergers that merge the work of the worktree builders,
-  apply database migrations and verify the build; a critic that challenges research findings; testers that check the
-  live production sites in a browser.
-- **Review before and after the code.** At normal and careful rigour a plan is reviewed before code is written; the
-  finished code is reviewed again, with at least one reviewer who has not seen the plan. Database, auth, security and
-  backend changes can never take the light path — the host enforces it.
-- **The host, not a model, owns production.** Agents don't push: they commit and ask the host to ship. The host
-  checks that the commit is still the branch tip, ships one change at a time from a queue, checks the health of
-  production on Vercel before pushing, and watches the deploy until it is live.
-- **Status from evidence.** "Shipped" and "verified" are recorded by the host, from the deploy result and the
-  tester's report — never self-reported by the agent that did the work.
-- **Fleet tools by role.** Each agent gets only the fleet tools its role allows, from the host's internal MCP
-  server: messaging, launching agents, merge, ship, feature tracking.
-- **Keeps itself running.** It can wake agents after a usage limit resets, steers context compaction before a session
-  overflows, diagnoses failed turns and git failures, nudges idle agents, and checks itself on startup for failures
-  met in practice.
-- **Dashboard.** A live view of every agent, chat with any of them, launch presets, and one hold on all production
-  ships.
+- **Roles:** meta-agents, isolated builders, support agents.
+- **Review:** adversarial review of plan and code.
+- **Deploys:** through the host; secondary production verification.
+- **Tools:** an internal MCP server with fleet tools per role.
+- **Self-healing mechanisms** and a live dashboard of all agents.
 
 ## Before
 
-- **2024** — freelance (B2B) for an automation firm, at several of its clients, language schools: Airtable,
-  Make.com, Bitrix24, Notion, two-way API synchronization. Since 2024, an unpaid pilot of my own system at a
-  language school.
-- **2008–2012** — software tester and analyst: accounting software for municipal offices, test automation, Oracle
-  SQL, process analysis.
+- **2024** — B2B freelance for an automation integrator (language schools): Make.com, Airtable, Bitrix24, Notion,
+  two-way API sync.
+- **Since 2024** — pilot: a language school runs on the first version of my system (Airtable + Make.com).
+- **2008–2012** — software tester and analyst: accounting software for municipal offices, test automation, Oracle SQL.
 
 3,000+ commits in the last year (private repositories) · [CV](https://cv.moryszon.com/)
