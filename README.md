@@ -1,11 +1,11 @@
 # Maciej Czyż
 
-**AI Workflow & Automation Engineer** — I build software through AI: I design, orchestrate and verify the work of AI
-agents.
+**AI Workflow & Automation Engineer** — I build Skolteka, a multi-tenant SaaS, on my own AI agent orchestrator.
 
 ## Skolteka · [skolteka.com](https://skolteka.com)
 
-Multi-tenant school-management SaaS with a built-in AI agent (a configurable assistant and chat).
+Multilingual multi-tenant SaaS for running language schools, with a built-in AI agent (a configurable assistant and
+chat).
 
 - Full stack: Next.js, Supabase / PostgreSQL, TypeScript
 - Automated quality gates, monitoring (Sentry)
@@ -13,20 +13,22 @@ Multi-tenant school-management SaaS with a built-in AI agent (a configurable ass
 
 ## AI Orchestrator
 
-My own AI agent orchestrator on the Claude Agent SDK. A central host coordinates agents with defined
-roles.
+Multi-agent orchestrator with a harness on the Claude Agent SDK, UX-focused.
 
 - **Roles:** meta-agents, isolated builders, support agents.
 - **Review:** adversarial review of plan and code.
-- **Deploys:** through the host; secondary production verification.
+- **Deploys:** through the harness; secondary production verification.
 - **Tools:** an internal MCP server with fleet tools per role.
-- **Self-healing mechanisms** and a live dashboard of all agents.
+- **Quality:** automated tests, optional evaluation without human-in-the-loop.
+- **Self-healing mechanisms**, moderate self-improvement and a live dashboard of all agents.
+
+## Automation for language schools
+
+- A language school runs on my Airtable and Make.com system.
+- **2024** — B2B freelance for an automation integrator: Make.com, Airtable, Bitrix24, Notion, two-way API sync.
 
 ## Before
 
-- **2024** — B2B freelance for an automation integrator (language schools): Make.com, Airtable, Bitrix24, Notion,
-  two-way API sync.
-- **Since 2024** — pilot: a language school runs on the first version of my system (Airtable + Make.com).
-- **2008–2012** — software tester and analyst: accounting software for municipal offices, test automation, Oracle SQL.
+- **2008–2012** — IT support and QA.
 
-3,000+ commits in the last year (private repositories) · [CV](https://cv.moryszon.com/)
+JavaScript/TypeScript — 2 years · [CV](https://cv.moryszon.com/)
