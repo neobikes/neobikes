@@ -1,34 +1,33 @@
 # Maciej Czyż
 
-**AI Workflow & Automation Engineer** — I build Skolteka, a multi-tenant SaaS, on my own AI agent orchestrator.
+**Agentic AI Engineer** — I build Skolteka, a SaaS, on my own AI agent orchestrator.
 
 ## Skolteka · [skolteka.com](https://skolteka.com)
 
-Multilingual multi-tenant SaaS for running language schools, with a built-in AI agent (a configurable assistant and
-chat).
+Multilingual SaaS for running language schools, with a built-in AI agent.
 
-- Full stack: Next.js, Supabase / PostgreSQL, TypeScript
+- Full stack: Next.js, PostgreSQL, TypeScript
 - Automated quality gates, monitoring (Sentry)
 - Designed since June 2024
 
 ## AI Orchestrator
 
-Multi-agent orchestrator with a harness on the Claude Agent SDK, UX-focused.
+Harness on the Claude Agent SDK, delightful UX.
 
 - **Roles:** meta-agents, isolated builders, support agents.
 - **Review:** adversarial review of plan and code.
-- **Deploys:** through the harness; secondary production verification.
+- **Deploys:** through the host; secondary production verification.
 - **Tools:** an internal MCP server with fleet tools per role.
-- **Quality:** automated tests, optional evaluation without human-in-the-loop.
-- **Self-healing mechanisms**, moderate self-improvement and a live dashboard of all agents.
+- **Software factory:** automated tests, optional evaluation without human-in-the-loop, moderate self-improvement.
+- **Operations:** self-healing mechanisms and a live dashboard of all agents.
 
 ## Automation for language schools
 
-- A language school runs on my Airtable and Make.com system.
-- **2024** — B2B freelance for an automation integrator: Make.com, Airtable, Bitrix24, Notion, two-way API sync.
+- Airtable, Make.com and Skolteka.
+- Also Bitrix24, Notion, two-way API sync.
 
 ## Before
 
-- **2008–2012** — IT support and QA.
+- IT Support & QA — FAKT / OTAGO, 2008–2012.
 
-JavaScript/TypeScript — 2 years · [CV](https://cv.moryszon.com/)
+[CV](https://cv.moryszon.com/)
